@@ -18,7 +18,7 @@ angular.module('shoppinglist.service', [])
                     });
                     
                     function buildUrl(pageName) {
-                    	var host = "http://10.0.2.2/avmishra/shoppinglist/web/app_dev.php/v1/";
+                    	var host = "http://172.19.3.135/avmishra/shoppinglist/web/app_dev.php/v1/";
                     	//var host = 'http://shoppinglist.localhost/app_dev.php/v1/';
                     	//var host = "http://www.avmishra.org/shoppinglist/web/v1/";
                     	return host + pageName;
@@ -110,7 +110,6 @@ angular.module('shoppinglist.service', [])
                                 password: pass
                             }
                         });
-                        
                         return(request.then(handleSuccess, handleError));
 
                     }

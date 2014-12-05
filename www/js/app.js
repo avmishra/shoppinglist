@@ -1,4 +1,4 @@
-angular.module('shoppinglist', ['ionic', 'shoppinglist.controllers','ngCordova'])
+angular.module('shoppinglist', ['ionic', 'shoppinglist.controllers','ngCordova','shoppinglist.admob'])
 
 	.config(function ($stateProvider, $urlRouterProvider) {
 	    $stateProvider
@@ -218,11 +218,13 @@ angular.module('shoppinglist', ['ionic', 'shoppinglist.controllers','ngCordova']
 	    }
 	  }
 	})
-    .run(function ($rootScope, $state, $window, App, $ionicPlatform, $ionicSideMenuDelegate) {
+    .run(function ($rootScope, $state, $window, App, $ionicPlatform, $ionicSideMenuDelegate, AdMob) {
     	//window.localStorage.removeItem('user');
     	//window.localStorage.removeItem('shoppinglist');
     	//window.localStorage.removeItem('deleted_shoppinglist');
     	//window.localStorage.removeItem('deleted_items');
+    	
+    	
     	
     	$ionicPlatform.registerBackButtonAction(function () {
     	    $ionicSideMenuDelegate.toggleLeft();
