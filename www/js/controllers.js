@@ -560,13 +560,13 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
 
         $scope.picked = function(item, inc) {
             if (item.picked) {
-                $("#picked_"+inc).html('<i class="icon ion-ios7-circle-outline custom-icon"></i>');
+                $("#picked_"+inc).html('<i class="icon ion-ios7-circle-outline custom-icon-pick"></i>');
                 $("#badge_"+inc).removeClass('badge-assertive').addClass('badge-balanced');
                 item.picked = 0;
                 $scope.shoppingLists[$scope.shoppingIndex].remaining_item++;
                 App.showToast('Item dropped successfully', 'long', 'center');
             } else {
-                $("#picked_"+inc).html('<i class="icon ion-ios7-checkmark custom-icon"></i>');
+                $("#picked_"+inc).html('<i class="icon ion-ios7-checkmark custom-icon-pick"></i>');
                 $("#badge_"+inc).removeClass('badge-balanced').addClass('badge-assertive');
                 item.picked = 1;
                 $scope.shoppingLists[$scope.shoppingIndex].remaining_item--;
