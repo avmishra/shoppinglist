@@ -18,9 +18,9 @@ angular.module('shoppinglist.service', [])
                     });
                     
                     function buildUrl(pageName) {
-                    	var host = "http://172.19.3.135/avmishra/shoppinglist/web/app_dev.php/v1/";
-                    	//var host = 'http://shoppinglist.localhost/app_dev.php/v1/';
-                    	//var host = "http://www.avmishra.org/shoppinglist/web/v1/";
+                    	//var host = "http://172.19.4.66/avmishra/shoppinglist/web/app_dev.php/v1/";
+                    	var host = "http://www.avmishra.org/shoppinglist/web/v1/";
+                    	//console.log(host + pageName);
                     	return host + pageName;
                     }
                     

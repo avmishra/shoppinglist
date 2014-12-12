@@ -282,7 +282,6 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
         $scope.userForm = {};
         $scope.shoppingLists = App.getAllShoppinglist();
     	var userDetails = App.getUserDetails();
-    	console.log(userDetails);
         if (userDetails == null || userDetails.status == 0) {
             $state.go('app.login');
         } else {
@@ -405,7 +404,7 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
                     			$state.go('app.listing');
                     		} else {
                     			for(key in jsonResponse.data) {
-                    				$scope.shoppingLists.push(jsonResponse.data[key]);
+                    				$scope.shoppingLists.unshift(jsonResponse.data[key]);
                     			}
                     			App.saveShoppinglist($scope.shoppingLists);
                     		}

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.shoppinglist830867" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>shoppinglist</name>
+<widget id="com.avmishra.shoppinglist" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Shoppinglist</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Make your shopping easy without paper and pen. 
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="avmishra.org@gmail.com" href="http://www.avmishra.org">
+      Shoppinglist Team
     </author>
   <content src="index.html"/>
+  <icon src="img/icon.png" /> 
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
