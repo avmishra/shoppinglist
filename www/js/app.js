@@ -225,7 +225,6 @@ angular.module('shoppinglist', ['ionic', 'shoppinglist.controllers','ngCordova',
     	//window.localStorage.removeItem('deleted_items');
     	
     	
-    	
     	$ionicPlatform.registerBackButtonAction(function () {
     	    $ionicSideMenuDelegate.toggleLeft();
     	}, 100);

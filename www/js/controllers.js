@@ -23,6 +23,11 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
         };
     	
     	$scope.exitApp = function() {
+    		
+    		AdMob.isInterstitialReady(function(isready){
+    		    if(isready) AdMob.showInterstitial();
+    		});
+    		
     		ionic.Platform.exitApp();
     		//navigator.app.exitApp();
     	}
