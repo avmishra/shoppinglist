@@ -3,6 +3,8 @@
     "name": "com.google.admobsdk",
     "cordova_name": "AdMob SDK for Android, iOS and WP8",
     "description": "AdMob SDK for Android, iOS and WP8 only, as dependency of other plugins",
+    "repo": "https://github.com/floatinghotpot/google-admob-sdk.git",
+    "issue": "https://github.com/floatinghotpot/google-admob-sdk/issues",
     "keywords": [
         "google",
         "play",

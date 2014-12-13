@@ -12,10 +12,18 @@
     <name>AdMob SDK for Android, iOS and WP8</name>
 	<description>AdMob SDK for Android, iOS and WP8 only, as dependency of other plugins</description>
 	<keywords>google,play,admob,sdk</keywords>
+    <repo>https://github.com/floatinghotpot/google-admob-sdk.git</repo>
+    <issue>https://github.com/floatinghotpot/google-admob-sdk/issues</issue>
 
     <!-- android -->
     <platform name="android">
-		<dependency id="com.google.playservices@19.0.0"/>
+        <!-- cordova registry, for cordova/plugman CLI, Intel XDK -->
+        <dependency id="com.google.playservices@19.0.0" />
+		 
+        <!-- github repo, for PhoneGap Build
+        <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" commit="00f511a8ce332d4586f067240460bfe978ace2ae" />
+        //-->
+		
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" 
 			    android:name="com.google.android.gms.ads.AdActivity" 

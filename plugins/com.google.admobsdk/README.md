@@ -5,7 +5,7 @@ This Cordova plugin is to add Google Ads SDK to cordova project, as depency of o
 Write dependency entry in plugin.xml of other plugins:
 
 ```xml
-	<dependency id="com.google.admobsdk" version=">=6.1.17"/>
+	<dependency id="com.google.admobsdk"/>
 ```
 
 Or, add it by hand:
@@ -20,8 +20,7 @@ Or, add it by hand:
 
 # ProGuard #
 
-If you plan to run ProGuard on your APK before releasing your app, you will need to add the following to your “proguard.cfg” file:
-­
+If you plan to run ProGuard on your APK before releasing your app, you will need to add the following to your proguard.cfg file:
 ```
 -keep class * extends java.util.ListResourceBundle {
     protected Object[][] getContents();
