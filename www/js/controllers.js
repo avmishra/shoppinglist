@@ -12,7 +12,7 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
     	$scope.showConfirm = function(index) {
 	          var confirmPopup = $ionicPopup.confirm({
 	            title: 'Do you really want to logout?',
-	            template: 'Please sync the data on server so that you can access them later.'
+	            template: 'Please sync the data with server so that you can access them later. Ignore if already did that.'
 	          });
 	          confirmPopup.then(function(res) {	
 	            if(res) {
@@ -23,11 +23,6 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
         };
     	
     	$scope.exitApp = function() {
-    		
-    		AdMob.isInterstitialReady(function(isready){
-    		    if(isready) AdMob.showInterstitial();
-    		});
-    		
     		ionic.Platform.exitApp();
     		//navigator.app.exitApp();
     	}
@@ -200,7 +195,7 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
                             			App.showToast('Data did not sync. Please try again later.', 'long', 'center');
                             		} else {
                             			for(key in jsonResponse.data) {
-                            				$scope.shoppingLists.push(jsonResponse.data[key]);
+                            				$scope.shoppingLists.unshift(jsonResponse.data[key]);
                             			}
                             			App.saveShoppinglist($scope.shoppingLists);
                             		}
