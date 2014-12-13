@@ -1,0 +1,7 @@
+# view AndroidManifest.xml #generated:5
+-keep class com.avmishra.shoppinglist.CordovaApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:11
+# view AndroidManifest.xml #generated:13
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
