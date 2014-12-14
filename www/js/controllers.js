@@ -23,6 +23,7 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
         };
     	
     	$scope.exitApp = function() {
+    		if(AdMob) AdMob.showInterstitial();
     		ionic.Platform.exitApp();
     		//navigator.app.exitApp();
     	}
@@ -563,13 +564,13 @@ angular.module('shoppinglist.controllers', ['shoppinglist.service'])
                 $("#badge_"+inc).removeClass('badge-assertive').addClass('badge-balanced');
                 item.picked = 0;
                 $scope.shoppingLists[$scope.shoppingIndex].remaining_item++;
-                App.showToast('Item dropped successfully', 'long', 'center');
+                App.showToast('Item dropped successfully', 'short', 'top');
             } else {
                 $("#picked_"+inc).html('<i class="icon ion-ios7-checkmark custom-icon-pick"></i>');
                 $("#badge_"+inc).removeClass('badge-balanced').addClass('badge-assertive');
                 item.picked = 1;
                 $scope.shoppingLists[$scope.shoppingIndex].remaining_item--;
-                App.showToast('Item picked successfully', 'short', 'center');
+                App.showToast('Item picked successfully', 'short', 'top');
             }
             item.sync = 1;
             App.saveShoppinglist($scope.shoppingLists);

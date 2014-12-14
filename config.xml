@@ -2,7 +2,7 @@
 <widget id="com.avmishra.shoppinglist" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Shoppinglist</name>
   <description>
-        Make your shopping easy without paper and pen. 
+        Make your shopping list easy without paper and pen. No need to remember things when going to shopping. Just create Shopping and add items immediately when you remembered it. 
     </description>
   <author email="avmishra.org@gmail.com" href="http://www.avmishra.org">
       Shoppinglist Team
@@ -11,7 +11,7 @@
   <icon src="www/img/icon.png" /> 
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
-  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>		
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
   <feature name="StatusBar">

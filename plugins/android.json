@@ -57,9 +57,6 @@
         "nl.x-services.plugins.toast": {
             "PACKAGE_NAME": "com.avmishra.shoppinglist"
         },
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.avmishra.shoppinglist"
-        },
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.avmishra.shoppinglist"
         },
@@ -67,6 +64,9 @@
             "PACKAGE_NAME": "com.avmishra.shoppinglist"
         },
         "com.google.cordova.admob": {
+            "PACKAGE_NAME": "com.avmishra.shoppinglist"
+        },
+        "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.avmishra.shoppinglist"
         }
     },

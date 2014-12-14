@@ -18,7 +18,7 @@ angular.module('shoppinglist.admob', [])
 			 adId:admobid.banner,
 			 autoShow:false
 		 });
-		
+		 AdMob.prepareInterstitial({adId:admobid.interstitial, autoShow:false});
 		 document.addEventListener('onAdLoaded',function(data){
 		    if (device.version.search('4.1') !== 0) {
 		    	AdMob.showBanner(9);
